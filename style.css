@@ -646,16 +646,16 @@ ul#slides li .content-wrap {
   margin: auto;
   padding-bottom: 25px; }
 .content-wrap .slide-title {
-  font-size: 3em;
+  font-size: 50px;
   font-weight: 900; }
 .content-wrap .slide-desc {
-  font-size: 1.3em; }
+  font-size: 20px; }
 .content-wrap button {
   padding: 15px 40px;
   border-radius: 30px;
   background: transparent;
   color: #ffffff;
-  font-size: .90em;
+  font-size: 20px;
   margin-top: 10px; }
 .content-wrap button:hover {
   background: #f0bc00;

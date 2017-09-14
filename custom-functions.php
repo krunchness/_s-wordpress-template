@@ -40,7 +40,7 @@ function mobile_detect_scripts() {
       
    } else {
       //responsive style
-      wp_register_style( 'responsive-style', get_template_directory_uri() . '/css/responsive.css', array(), '1', 'all' );
+      wp_register_style( 'responsive-style', get_template_directory_uri() . '/css/responsive.css', array(), null, 'all' );
       wp_enqueue_style( 'responsive-style' );
    }
 }
