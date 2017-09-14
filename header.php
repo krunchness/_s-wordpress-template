@@ -24,23 +24,28 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscore' ); ?></a>
 
+
+
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<!-- Site Info -->
-			<div class="top-header">
-				<div class="row align-center">
-					<div class="large-3 medium-4">
-						<p>Location</p>
-					</div>
-					<div class="large-3 medium-4">
-						<p>Contact No.</p>
-					</div>
-					<div class="large-3 medium-4">
-						<p>Telephone No.</p>
+			<!-- If Have Top Header -->
+			<?php if ($redux_data['top-header-chk'] == 1): ?>
+				<div class="top-header">
+					<div class="row align-center">
+						<div class="large-3 medium-4">
+							<p>Location</p>
+						</div>
+						<div class="large-3 medium-4">
+							<p>Contact No.</p>
+						</div>
+						<div class="large-3 medium-4">
+							<p>Telephone No.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-
+			<?php endif ?>
+			<!-- End If Have Top Header -->
 			<!-- Mid Header -->
 			<div class="mid-header">
 				<div class="row">
@@ -62,7 +67,7 @@
 				</div>
 			</div>
 		</div><!-- .site-branding -->
-
+<!-- End If Have Top Header -->
 		
 	</header><!-- #masthead -->
 

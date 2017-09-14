@@ -127,6 +127,15 @@
                 'desc'     => __('Upload Your Site Logo', 'redux-framework'),
                 'subtitle' => __('Upload any media using the WordPress native uploader', 'redux-framework'),
             ),
+            array(
+                'id'       => 'top-header-chk',
+                'type'     => 'checkbox',
+                'title'    => __('Top Header', 'redux-framework'), 
+                'subtitle' => __('No validation can be done on this field type', 'redux-framework-demo'),
+                'desc'     => __('Enable if have a Top Header'),
+                'default'  => '1'// 1 = on | 0 = off
+            ),
+
         )
     ) );
 

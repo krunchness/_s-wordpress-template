@@ -41,6 +41,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Media
     ## Captions
     ## Galleries
+# Custom Styles
+    ## Header
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -595,3 +597,57 @@ embed, iframe, object {
 
 .footer-nav .menu {
   display: block; }
+
+/*--------------------------------------------------------------
+# Custom Styles
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.mid-header {
+  margin: 25px 0; }
+
+#front-page-slider {
+  position: relative; }
+
+.lSPager.lSpg {
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+.lSPager.lSpg li.active a {
+  background-color: #ffffff; }
+.lSPager.lSpg li a {
+  background-color: transparent;
+  border: 2px solid white; }
+
+ul#slides li {
+  position: relative; }
+ul#slides li .content-wrap {
+  position: absolute;
+  color: white;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 15%;
+  width: 51%; }
+
+.content-wrap p {
+  margin: auto;
+  padding-bottom: 25px; }
+.content-wrap .slide-title {
+  font-size: 3em;
+  font-weight: 900; }
+.content-wrap .slide-desc {
+  font-size: 1.3em; }
+.content-wrap button {
+  padding: 15px 40px;
+  border-radius: 30px;
+  background: transparent;
+  color: #ffffff;
+  font-size: .90em;
+  margin-top: 10px; }
+.content-wrap button:hover {
+  background: #f0bc00;
+  color: #ffffff; }
