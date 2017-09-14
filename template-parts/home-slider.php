@@ -1,5 +1,5 @@
 <section id="front-page-slider">
-	<ul id="slides" class="lightSlider">
+	<ul id="slides" class="lightSlider cS-hidden">
 		<li class="text-center">
 					<div class="content-wrap">
 						<div class="row">

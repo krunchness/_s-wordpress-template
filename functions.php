@@ -89,15 +89,6 @@ add_action( 'after_setup_theme', 'underscore_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function underscore_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'underscore' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'underscore' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Column One', 'underscore' ),
@@ -111,6 +102,24 @@ function underscore_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Column Two', 'underscore' ),
 		'id'            => 'footer-two',
+		'description'   => esc_html__( 'Add widgets here.', 'underscore' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column Three', 'underscore' ),
+		'id'            => 'footer-three',
+		'description'   => esc_html__( 'Add widgets here.', 'underscore' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column Four', 'underscore' ),
+		'id'            => 'footer-four',
 		'description'   => esc_html__( 'Add widgets here.', 'underscore' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',

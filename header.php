@@ -24,8 +24,6 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscore' ); ?></a>
 
-
-
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<!-- Site Info -->
@@ -59,7 +57,8 @@
 					<!-- site-navigation menu -->
 
 					<div class="large-6 columns site-navigation">
-						<nav id="site-navigation" class="main-navigation" role="navigation">
+						<!-- add left or right class next to main-navigation to set the direction of the menu -->
+						<nav id="site-navigation" class="main-navigation right" role="navigation">
 							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscore' ); ?></button>
 							<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 						</nav><!-- #site-navigation -->
@@ -67,7 +66,6 @@
 				</div>
 			</div>
 		</div><!-- .site-branding -->
-<!-- End If Have Top Header -->
 		
 	</header><!-- #masthead -->
 

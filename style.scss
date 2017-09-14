@@ -44,6 +44,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     ## Galleries
 # Custom Styles
     ## Header
+    ## Homepage
+    ## Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -548,11 +550,17 @@ a:active {
     margin: auto;
 }
 
+.main-navigation.right {
+    float: right;
+}
+
+.main-navigation.left {
+    float: left;
+}
+
 .main-navigation {
     clear: both;
     display: block;
-    float: left;
-    width: 120%;
 
     ul {
         display: none;
@@ -901,6 +909,9 @@ object {
     margin: 25px 0;
 }
 
+/*--------------------------------------------------------------
+## Homepage
+--------------------------------------------------------------*/
 #front-page-slider {
     position: relative;
 }
@@ -960,11 +971,42 @@ ul#slides {
         color: #ffffff;
         font-size: .90em;
         margin-top: 10px;
-       
 
         &:hover {
             background: #f0bc00;
             color: #ffffff;
         }
+    }
+}
+
+.cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+#footer-cta {
+    text-align: center;
+    background: #f38f8f;
+}
+
+.sticky-button-position {
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: fixed;
+    right: -4%;
+    top: 35%;
+    z-index: 100;
+
+    .button {
+        margin: 0 0 0rem;
+        font-size: 1.2rem;
     }
 }

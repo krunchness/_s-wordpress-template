@@ -1,6 +1,5 @@
 jQuery(document).ready(function ($) {
 	$('#slides').lightSlider({
-        adaptiveHeight:false,
         enableDrag:false,
         item:1,
         slideMargin:0,
@@ -8,7 +7,10 @@ jQuery(document).ready(function ($) {
         auto:true,
         speed:1000,
         pause: 5000,
-        enableTouch: true,
+        pager: false,
+        onSliderLoad: function() {
+            $('#slides').removeClass('cS-hidden');
+        } 
     });
 
 
