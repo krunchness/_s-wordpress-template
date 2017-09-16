@@ -550,13 +550,7 @@ a:active {
     margin: auto;
 }
 
-.main-navigation.right {
-    float: right;
-}
 
-.main-navigation.left {
-    float: left;
-}
 
 .main-navigation {
     clear: both;
@@ -594,6 +588,18 @@ a:active {
         display: block;
         text-decoration: none;
     }
+}
+
+.main-navigation.right {
+    float: right;
+}
+
+.main-navigation.left {
+    float: left;
+}
+
+.main-navigation.center{
+    display: inline-block;
 }
 
 .main-navigation ul ul {
